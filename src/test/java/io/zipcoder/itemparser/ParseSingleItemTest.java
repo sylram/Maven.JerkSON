@@ -3,6 +3,7 @@ package io.zipcoder.itemparser;
 import io.zipcoder.utils.Item;
 import io.zipcoder.utils.ItemParseException;
 import io.zipcoder.ItemParser;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -21,6 +22,21 @@ public class ParseSingleItemTest {
         // then
         assertEquals(expected, actual);
     }
+//    @Test
+//    public void testMyTest() throws ItemParseException {
+//        // given
+//        ItemParser itemParser = new ItemParser();
+//        String valueToParse = "naMe:eggS;price:1.25;type:Food;expiration:1/25/2016##";
+//        String expected1 = "Milk";
+//        Item expected = new Item("milk",0.0,null,null);
+//
+//
+//         //when
+//        String actual = itemParser.replace(valueToParse);
+//
+//         //then
+//        Assert.assertEquals(expected1,actual);
+//    }
 
     @Test
     public void test2() throws ItemParseException {
